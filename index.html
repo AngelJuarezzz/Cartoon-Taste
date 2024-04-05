@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon Taste - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="inicio-header">
+        <img src="back.png" alt="Logo Cartoon Taste" class="logo">
+        <h1 class="animated fadeIn">Cartoon Taste - Cafetería Animada</h1>
+    </header>
+    <nav>
+        <a href="index.html" class="animated slideInDown">Inicio</a>
+        <a href="menu.html" class="animated slideInDown">Menú</a>
+        <a href="contacto.html" class="animated slideInDown">Contacto</a>
+    </nav>
+    <section class="inicio-section">
+        <h2 class="animated fadeIn">¡Bienvenido a Cartoon Taste!</h2>
+        <p class="animated fadeIn">¡Disfruta de una experiencia única con nuestros deliciosos platillos inspirados en tus caricaturas y películas animadas favoritas!</p>
+    </section>
+    <section class="quienes-somos">
+        <h2>Quiénes Somos</h2>
+        <p>Somos una cafetería llamada Cartoon Taste, apasionados por traer la magia de las caricaturas y películas animadas a tu experiencia culinaria diaria. Nos esforzamos por ofrecer alimentos y bebidas inspirados en tus personajes favoritos.</p>
+        <button id="mision-btn" onclick="toggleMision()">Misión</button>
+        <button id="vision-btn" onclick="toggleVision()">Visión</button>
+        <div id="mision" style="display: none;">
+            <h3>Misión</h3>
+            <p>Crear un lugar acogedor donde amigos y familia puedan reunirse para disfrutar de sabores inolvidables así como momentos únicos.</p>
+        </div>
+        <div id="vision" style="display: none;">
+            <h3>Visión</h3>
+            <p>Establecer la empresa como líder de cafeterías inspirada en lo animado, al brindar una experiencia única a los clientes. Se compromete a innovar constantemente los procesos.</p>
+        </div>
+        
+    </section>
+    <footer class="animated slideInUp">
+        <p>&copy; 2024 Cartoon Taste - Hecho con Pasión</p>
+    </footer>
+    <script>
+        function toggleMision() {
+            var mision = document.getElementById("mision");
+            if (mision.style.display === "none") {
+                mision.style.display = "block";
+            } else {
+                mision.style.display = "none";
+            }
+        }
+
+        function toggleVision() {
+            var vision = document.getElementById("vision");
+            if (vision.style.display === "none") {
+                vision.style.display = "block";
+            } else {
+                vision.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

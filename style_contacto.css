@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.contacto-header {
+    background-color: #28b888;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contacto-section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.contacto-section form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contacto-section form input[type="text"],
+.contacto-section form input[type="email"],
+.contacto-section form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contacto-section form textarea {
+    height: 100px;
+}
+
+.contacto-section form input[type="submit"] {
+    background-color: #39a682;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto-section form input[type="submit"]:hover {
+    background-color: #5effd7;
+}
+
+nav {
+    background-color: #36876c;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #5effd7;
+}
+
+nav {
+    transition: transform 0.3s ease; /* Agrega animación de 0.3 segundos */
+}
+
+nav:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del menú al 110% en hover */
+}
+
+/* Estilos para el pie de página */
+footer {
+    position: absolute; /* Establece una posición absoluta */
+    bottom: 0; /* Coloca el pie de página en la parte inferior de la ventana */
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    animation: slideInUp 0.5s ease; /* Añade animación de entrada */
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.redes-btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.redes-btn:hover {
+    background-color: #e64d00;
+    transform: scale(1.05);
+}
+
+.instagram {
+    background-color: #653883; /* Color de Instagram */
+}
+
+.tiktok {
+    background-color: #db146e; /* Color de TikTok */
+}
+
+.item img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.item:hover img {
+    transform: scale(1);
+}
+
+.logo {
+    margin-right: 10px;
+    width: 400px; /* Reducir el tamaño del logo */
+    height: auto; /* Mantener la proporción */
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(0.9); /* Ajustar la escala al pasar el mouse */
+}
+
